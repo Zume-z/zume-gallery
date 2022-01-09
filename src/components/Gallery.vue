@@ -1,18 +1,19 @@
 <template>
   <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 self-start gap-4">
-    <div
-      @click="selectedImageIndex = i"
-      v-for="(image, i) in filteredImages"
-      class="relative w-full aspect-w-16 aspect-h-9 bg-cover bg-center cursor-pointer transition duration-300 ease-in-out"
-      :class="activeImageIndex !== null && activeImageIndex !== i && 'opacity-20'"
-      :style="{ backgroundImage: `url(${image.url})` }"
-    >
+    <div @click="selectedImageIndex = i" v-for="(image, i) in filteredImages" class="relative w-full bg-cover bg-center">
+      <div
+        class="relative w-full aspect-w-16 aspect-h-9 bg-cover bg-center cursor-pointer transition duration-300 ease-in-out"
+        :style="{ backgroundImage: `url(${image.url})` }"
+        :class="activeImageIndex !== null && activeImageIndex == i && 'opacity-20 '"
+      ></div>
+      <div class="cursor-pointer transition duration-300 ease-in-out opacity-0" :class="activeImageIndex !== null && activeImageIndex == i && 'opacity-100'">{{ image.title }}</div>
       <div
         class="absolute top-1/2 left-1/2 w-full h-full p-2 box-content transform -translate-x-1/2 -translate-y-1/2"
         @mouseenter="activeImageIndex = i"
         @mouseleave="activeImageIndex = null"
       />
     </div>
+
     <transition
       enter-active-class="transition duration-300"
       enter-from-class="opacity-0"

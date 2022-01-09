@@ -27,11 +27,12 @@
     </div>
   </div>
 
-  <div class="hidden sm:block relative p-8 flex-shrink-0 z-10" @mouseenter="menuActive = true" @mouseleave="menuActive = false">
+  <div class="hidden sm:block relative p-8 flex-shrink-0 z-10" @mouseleave="menuActive = false">
     <!-- DESKTOP Sidebar Menu Icon -->
-    <div class="sticky top-16 z-10">
+    <div class="sticky top-16 z-10" @mouseenter="menuActive = true">
       <div
         class="grid grid-flow-row w-4 relative z-10 cursor-pointer duration-300 ease-in-out"
+        @mouseenter="menuActive = true"
         :class="
           menuActive && developActive
             ? 'gap-0 top-[52px]'
