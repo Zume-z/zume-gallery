@@ -10,7 +10,7 @@
       <a class="">.</a>
       <a class="">{{ datetime }}</a>
       <a class="">.</a>
-      <a class="">{{ activeImageIndex + 1 }}/45</a>
+      <a class="">{{ activeImageIndex + 1 }}/46</a>
     </div>
   </div>
 </template>

@@ -14,12 +14,22 @@ interface Config {
 export const config: Config = {
   images: [
     {
-      title: '045',
-      dateUploaded: '16.12.21',
+      title: '046',
+      dateUploaded: '28.11.21',
       madeWith: 'P5.JS',
       categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/045.png', import.meta.url).href,
+      imageUrl: new URL('./assets/img/0000/028.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/0000/028.mp4', import.meta.url).href,
     },
+    {
+      title: '045',
+      dateUploaded: '28.11.21',
+      madeWith: 'BLENDER',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/luxury.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/luxury.mp4', import.meta.url).href,
+    },
+
     {
       title: '044',
       dateUploaded: '15.12.21',
@@ -94,6 +104,7 @@ export const config: Config = {
       imageUrl: new URL('./assets/img/0000/035.png', import.meta.url).href,
       videoUrl: new URL('./assets/mp4/0000/035.mp4', import.meta.url).href,
     },
+
     {
       title: '034',
       dateUploaded: '4.12.21',
@@ -144,12 +155,12 @@ export const config: Config = {
     },
     {
       title: '028',
-      dateUploaded: '28.11.21',
+      dateUploaded: '16.12.21',
       madeWith: 'P5.JS',
       categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/028.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/0000/028.mp4', import.meta.url).href,
+      imageUrl: new URL('./assets/img/0000/045.png', import.meta.url).href,
     },
+
     {
       title: '027',
       dateUploaded: '27.11.21',
