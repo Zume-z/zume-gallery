@@ -1,7 +1,7 @@
 <template>
-  <div class="sm:flex w-full sm:min-h-screen sm:flex-row">
-    <Sidebar />
-    <div class="sm:p-16 sm:pl-0 p-4 w-full pr-0">
+  <div class="flex w-full min-h-screen flex-row">
+  
+    <div class=" w-full">
       <router-view v-slot="{ Component }">
         <transition
           enter-active-class="transition duration-300"
@@ -21,11 +21,9 @@
 </template>
 
 <script lang="ts">
-import Sidebar from './components/Sidebar.vue'
 import { defineComponent } from '@vue/runtime-core'
 export default defineComponent({
   components: {
-    Sidebar,
   },
 })
 </script>
