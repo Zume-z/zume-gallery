@@ -5,11 +5,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      jura: ['Nb Grotesk Pro Mono', 'sans-serif'],
-    },
-    fontFamily: {
-      Nb: ['Nb International Pro', 'sans-serif'],
-    },
+      jura: ['Inconsolata', 'sans-serif'],
+    }
   },
   variants: {
     extend: {},

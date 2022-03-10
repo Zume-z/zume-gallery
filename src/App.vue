@@ -1,7 +1,6 @@
 <template>
   <div class="flex w-full min-h-screen flex-row">
-  
-    <div class=" w-full">
+    <div class="w-full">
       <router-view v-slot="{ Component }">
         <transition
           enter-active-class="transition duration-300"
@@ -23,7 +22,6 @@
 <script lang="ts">
 import { defineComponent } from '@vue/runtime-core'
 export default defineComponent({
-  components: {
-  },
+  components: {},
 })
 </script>
