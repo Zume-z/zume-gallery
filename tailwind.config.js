@@ -6,7 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       jura: ['Inconsolata', 'sans-serif'],
-    }
+    },
   },
   variants: {
     extend: {},

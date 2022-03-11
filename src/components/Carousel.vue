@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative aspect-square w-full mt-24" @click="incrementIndex">
+    <div class="relative aspect-square w-full mt-20" @click="incrementIndex">
       <transition-group
         enter-active-class="transition duration-300"
         enter-from-class="opacity-0"
@@ -10,7 +10,6 @@
         leave-to-class="opacity-0"
       >
         <template v-for="(image, i) in images" :key="i">
-          <!-- <img v-show="activeIndex === i" :src="image.imageUrl" class="w-full h-full absolute top-0 left-0 object-contain pointer-events-none select-none" /> -->
           <template v-if="image.videoUrl">
             <video
               v-show="activeIndex === i"
@@ -27,7 +26,7 @@
         </template>
       </transition-group>
     </div>
-    <div class="flex space-x-2 w-full justify-center mt-4 text-5xl font-jura font-extralight">
+    <div class="flex w-full justify-center mt-2 text-4xl font-jura font-extralight">
       <div class="cursor-pointer select-none px-4 active:text-gray-300 duration-200 ease-in-out" @click="decrementIndex">&lt;</div>
       <div class="cursor-pointer select-none px-4 active:text-gray-300 duration-200 ease-in-out" @click="incrementIndex">></div>
     </div>

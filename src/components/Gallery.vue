@@ -5,9 +5,9 @@
     <button v-if="!muted" @click="mute()">Sound Off</button> -->
 
     <div class="flex-1 flex justify-center items-center">
-      <Carousel class="w-full max-w-3xl p-1" :images="images" @onIndexChange="activeImageIndex = $event" />
+      <Carousel class="w-full max-w-2xl p-1 sm:p-8" :images="images" @onIndexChange="activeImageIndex = $event" />
     </div>
-    <div class="flex justify-center mb-12 gap-2 font">
+    <div class="flex justify-center mb-9 gap-2 text-[11px]">
       <a class="hover:underline" href="https://github.com/Zume-z" target="_blank">ZUME</a>
       <a class="">.</a>
       <a class="">{{ activeImage.madeWith }}</a>
