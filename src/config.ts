@@ -32,7 +32,7 @@ export const config: Config = {
     {
       title: '035',
       dateUploaded: '5.12.21',
-      madeWith: '2',
+      madeWith: 'P5.JS',
       categories: ['code', 'graphic'],
       imageUrl: new URL('./assets/img/0000/035.png', import.meta.url).href,
       videoUrl: new URL('./assets/mp4/0000/035.mp4', import.meta.url).href,
@@ -83,7 +83,7 @@ export const config: Config = {
     {
       title: '030',
       dateUploaded: '30.11.21',
-      madeWith: '1',
+      madeWith: 'P5.JS',
       categories: ['code', 'graphic'],
       imageUrl: new URL('./assets/img/0000/030.png', import.meta.url).href,
       videoUrl: new URL('./assets/mp4/0000/030.mp4', import.meta.url).href,

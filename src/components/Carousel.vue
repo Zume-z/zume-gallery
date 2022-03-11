@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative aspect-square w-full" @click="incrementIndex">
+    <div class="relative aspect-square w-full mt-24" @click="incrementIndex">
       <transition-group
         enter-active-class="transition duration-300"
         enter-from-class="opacity-0"
