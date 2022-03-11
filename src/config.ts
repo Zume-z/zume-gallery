@@ -23,22 +23,6 @@ export const config: Config = {
     },
     {
       title: '045',
-      dateUploaded: '28.11.21',
-      madeWith: 'BLENDER',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/luxury.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/luxury.mp4', import.meta.url).href,
-    },
-
-    {
-      title: '044',
-      dateUploaded: '15.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/044.png', import.meta.url).href,
-    },
-    {
-      title: '043',
       dateUploaded: '14.12.21',
       madeWith: 'P5.JS',
       categories: ['code', 'graphic'],
@@ -46,48 +30,14 @@ export const config: Config = {
       videoUrl: new URL('./assets/mp4/0000/043.mp4', import.meta.url).href,
     },
     {
-      title: '042',
-      dateUploaded: '13.12.21',
-      madeWith: 'P5.JS',
+      title: '035',
+      dateUploaded: '5.12.21',
+      madeWith: '2',
       categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/042.png', import.meta.url).href,
+      imageUrl: new URL('./assets/img/0000/035.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/0000/035.mp4', import.meta.url).href,
     },
-    {
-      title: '041',
-      dateUploaded: '12.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/041.png', import.meta.url).href,
-    },
-    {
-      title: '040',
-      dateUploaded: '10.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/040.png', import.meta.url).href,
-    },
-    {
-      title: '039',
-      dateUploaded: '9.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/039.png', import.meta.url).href,
-    },
-    {
-      title: '038',
-      dateUploaded: '8.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/038.png', import.meta.url).href,
-    },
-    {
-      title: '037',
-      dateUploaded: '7.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/037.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/0000/037.mp4', import.meta.url).href,
-    },
+
     {
       title: '036',
       dateUploaded: '6.12.21',
@@ -95,14 +45,6 @@ export const config: Config = {
       categories: ['code', 'graphic'],
       imageUrl: new URL('./assets/img/0000/036.png', import.meta.url).href,
       videoUrl: new URL('./assets/mp4/0000/036.mp4', import.meta.url).href,
-    },
-    {
-      title: '035',
-      dateUploaded: '5.12.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/035.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/0000/035.mp4', import.meta.url).href,
     },
 
     {
@@ -141,11 +83,90 @@ export const config: Config = {
     {
       title: '030',
       dateUploaded: '30.11.21',
-      madeWith: 'P5.JS',
+      madeWith: '1',
       categories: ['code', 'graphic'],
       imageUrl: new URL('./assets/img/0000/030.png', import.meta.url).href,
       videoUrl: new URL('./assets/mp4/0000/030.mp4', import.meta.url).href,
     },
+
+    {
+      title: '043',
+      dateUploaded: '28.11.21',
+      madeWith: 'BLENDER',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/luxury.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/luxury.mp4', import.meta.url).href,
+    },
+    {
+      title: '017',
+      dateUploaded: '17.11.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/017.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/0000/017.mp4', import.meta.url).href,
+    },
+    {
+      title: '016',
+      dateUploaded: '16.11.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/016.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/0000/016.mp4', import.meta.url).href,
+    },
+
+    {
+      title: '044',
+      dateUploaded: '15.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/044.png', import.meta.url).href,
+    },
+
+    {
+      title: '042',
+      dateUploaded: '13.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/042.png', import.meta.url).href,
+    },
+
+    {
+      title: '041',
+      dateUploaded: '12.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/041.png', import.meta.url).href,
+    },
+    {
+      title: '040',
+      dateUploaded: '10.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/040.png', import.meta.url).href,
+    },
+    {
+      title: '039',
+      dateUploaded: '9.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/039.png', import.meta.url).href,
+    },
+    {
+      title: '038',
+      dateUploaded: '8.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/038.png', import.meta.url).href,
+    },
+    {
+      title: '037',
+      dateUploaded: '7.12.21',
+      madeWith: 'P5.JS',
+      categories: ['code', 'graphic'],
+      imageUrl: new URL('./assets/img/0000/037.png', import.meta.url).href,
+      videoUrl: new URL('./assets/mp4/0000/037.mp4', import.meta.url).href,
+    },
+
     {
       title: '029',
       dateUploaded: '29.11.21',
@@ -232,22 +253,7 @@ export const config: Config = {
       categories: ['code', 'graphic'],
       imageUrl: new URL('./assets/img/0000/018.png', import.meta.url).href,
     },
-    {
-      title: '017',
-      dateUploaded: '17.11.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/017.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/0000/017.mp4', import.meta.url).href,
-    },
-    {
-      title: '016',
-      dateUploaded: '16.11.21',
-      madeWith: 'P5.JS',
-      categories: ['code', 'graphic'],
-      imageUrl: new URL('./assets/img/0000/016.png', import.meta.url).href,
-      videoUrl: new URL('./assets/mp4/0000/016.mp4', import.meta.url).href,
-    },
+
     {
       title: '015',
       dateUploaded: '15.11.21',
