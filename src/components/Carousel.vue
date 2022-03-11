@@ -12,7 +12,14 @@
         <template v-for="(image, i) in images" :key="i">
           <!-- <img v-show="activeIndex === i" :src="image.imageUrl" class="w-full h-full absolute top-0 left-0 object-contain pointer-events-none select-none" /> -->
           <template v-if="image.videoUrl">
-            <video v-show="activeIndex === i" :src="image.videoUrl" class="w-full h-full absolute top-0 left-0 object-contain pointer-events-none select-none" muted autoplay loop/>
+            <video
+              v-show="activeIndex === i"
+              :src="image.videoUrl"
+              class="w-full h-full absolute top-0 left-0 object-contain pointer-events-none select-none"
+              muted
+              autoplay
+              loop
+            />
           </template>
           <template v-else>
             <img v-show="activeIndex === i" :src="image.imageUrl" class="w-full h-full absolute top-0 left-0 object-contain pointer-events-none select-none" />
@@ -20,7 +27,7 @@
         </template>
       </transition-group>
     </div>
-    <div class="flex space-x-2 w-full justify-center mt-4 text-5xl font-jura font-extralight ">
+    <div class="flex space-x-2 w-full justify-center mt-4 text-5xl font-jura font-extralight">
       <div class="cursor-pointer select-none px-4 active:text-gray-300 duration-200 ease-in-out" @click="decrementIndex">&lt;</div>
       <div class="cursor-pointer select-none px-4 active:text-gray-300 duration-200 ease-in-out" @click="incrementIndex">></div>
     </div>
@@ -51,6 +58,12 @@ export default defineComponent({
       this.activeIndex = this.activeIndex === 0 ? this.images.length - 1 : this.activeIndex - 1
       this.$emit('onIndexChange', this.activeIndex)
     },
+  },
+  mounted() {
+    window.addEventListener('keydown', (e: KeyboardEvent) => {
+      e.code == 'ArrowRight' || e.code == 'Space' ? this.incrementIndex() : null
+      e.code == 'ArrowLeft' ? this.decrementIndex() : null
+    })
   },
 })
 </script>
