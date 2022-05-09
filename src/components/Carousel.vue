@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Loader v-if="loading" class="absolute w-full h-full top-0 left-0" />
-    <div :class="loading && 'opacity-0'">
+    <Loader v-if="!loaded" class="absolute w-full h-full top-0 left-0" />
+    <div :class="!loaded && 'opacity-0'">
       <div class="relative aspect-square w-full mt-20" @click="incrementIndex">
         <transition-group
           enter-active-class="transition duration-300"
@@ -50,7 +50,7 @@ export default defineComponent({
     },
   },
   data: () => ({
-    loading: false,
+    loaded: false,
     activeIndex: 0,
   }),
   methods: {
@@ -67,7 +67,14 @@ export default defineComponent({
     window.addEventListener('keydown', (e: KeyboardEvent) => {
       e.code == 'ArrowRight' || e.code == 'Space' ? this.incrementIndex() : null
       e.code == 'ArrowLeft' ? this.decrementIndex() : null
-    })
+    }),
+    
+    document.onreadystatechange = () => {
+      if (document.readyState == "complete") {
+        this.loaded = true;
+      }
+    }
+
   },
 })
 </script>
