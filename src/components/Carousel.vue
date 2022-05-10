@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Loader v-if="loaded" class="absolute w-full h-full top-0 left-0" />
-    <div :class="loaded && 'opacity-0'">
+    <Loader v-if="!loaded" class="absolute w-full h-full top-0 left-0" />
+    <div :class="!loaded && 'opacity-0'">
       <div class="relative aspect-square w-full mt-20" @click="incrementIndex">
         <transition-group
           enter-active-class="transition duration-300"
